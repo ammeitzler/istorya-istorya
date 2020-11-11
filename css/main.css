@@ -11,7 +11,7 @@ html,body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #e9c000;
+    background-color: white;
     overflow: hidden;
 }
 h1,h2,p {
@@ -80,7 +80,6 @@ td {
     overflow: hidden;
     position: relative;
     z-index: 9;
-    border-right: 1px solid black;
 }
 #canvas {
     width: 110%;
@@ -202,9 +201,12 @@ td {
 
 
 #gradient {
-    background: linear-gradient(-45deg, #e9c000, #e9c000, #e9c000, yellow);
+    background: linear-gradient(-45deg, white, white, lightgreen, white);
     background-size: 400% 400%;
     animation: gradient 20s ease infinite;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 @keyframes gradient {
@@ -350,7 +352,7 @@ canvas { pointer-events:none; z-index:10; }
 
 @media (max-width: 1550px) { 
     p {
-        font-size: 0.8em;
+        font-size: 0.75em;
     }
     .top {
         border-top: 2px solid #000;
@@ -410,7 +412,7 @@ canvas { pointer-events:none; z-index:10; }
         height: 250px;
     }
     #footer .homedivs {
-        height: 100px;
+        height: 280px;
     }
     #canvas {
         margin-top: 0;

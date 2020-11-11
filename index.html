@@ -43,9 +43,9 @@
                         </td>
                     </tr>
                     <tr id="footer">
-                        <td class="homedivs" colspan="3">
+                        <td id="gradient" class="homedivs" colspan="3">
                             <p>
-                                <canvas id="canvas" height="50"></canvas>
+                                <!-- <canvas id="canvas" height="50"></canvas> -->
                             </p>
                         </td>
                         <td class="aboutdivs" colspan="3">
@@ -104,8 +104,8 @@
             var material = new THREE.MeshPhongMaterial({
               // ambient: 0xede20f,
               color: 0xede20f,
-              specular: 0xffffff,
-              shininess: 5,
+              // specular: 0xffffff,
+              shininess: 100,
               wireframe: true,
               shading: THREE.SmoothShading
             });
@@ -115,8 +115,8 @@
             // create lights
             scene.add( new THREE.AmbientLight(0xede20f) );
 
-            var light = new THREE.PointLight(0xffffff, 6, 40);
-            light.position.set(20, 20, 20);
+            var light = new THREE.PointLight(0xffffff, 1, 1);
+            light.position.set(0, 0, 20);
             scene.add(light);
 
             // set the camera

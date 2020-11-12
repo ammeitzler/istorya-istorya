@@ -134,7 +134,6 @@
                 var block = {}
                 for(var i=0;i < data.contents.length; i++) {
                     console.log(data.contents)
-                    console.log("this!!")
                     if (data.contents[i].class == "Text") {
                         content = data.contents[i].content_html
                         artist = data.contents[i].connected_by_username

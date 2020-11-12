@@ -101,6 +101,9 @@ td {
     margin: 0 auto;
     height: 90vh;
     font-size: 2em;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 #footer {
     height: 52%;
@@ -328,6 +331,9 @@ canvas { pointer-events:none; z-index:10; }
     padding-top: 9px;
     padding-bottom: 35px;
     padding-left: 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 #archive_pg .col .archive_block a {
     text-decoration: underline;
@@ -365,7 +371,7 @@ canvas { pointer-events:none; z-index:10; }
     #grid-container {
         height: auto;
         margin-top: 0.5em;
-        margin-bottom: 2em;
+        margin-bottom: 3em;
     }
     .homedivs p,p {
         font-size: 0.8em;
@@ -385,7 +391,7 @@ canvas { pointer-events:none; z-index:10; }
         padding: 0;
         overflow-y: scroll;
         margin: 0 auto;
-        width: 95%;
+        width: 93%;
     }
     #archive_pg ul {
         grid-template-columns: repeat(1, 1fr);

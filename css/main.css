@@ -36,7 +36,7 @@ h1#title{
     font-family: 'mdisplay';
     margin: 0;
     text-align: center;
-    color: white;
+    color: #f5f5f5;
     text-shadow: -1px -1px 0 black, 7px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 h2.jeepney {
@@ -138,7 +138,7 @@ td {
     font-family: mdisplay;
 }
 .homedivs p {
-    font-family: jeepney;
+    font-family: mdisplay;
     font-size: 0.65em;
 }
 .third {

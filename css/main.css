@@ -106,7 +106,7 @@ td {
     -moz-box-sizing: border-box;
 }
 #footer {
-    height: 52%;
+    max-height: 30%;
 }
 #footer .aboutdivs {
     padding: 0 7%;
@@ -122,7 +122,6 @@ td {
 }
 .shareddivs.img {
     background-image: url("../images/sharedmeal_onlyimg.png");
-    width: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -134,16 +133,24 @@ td {
 .aboutdivs{
     display: none;
 }
-.aboutdivs p, .shareddivs p {
+.aboutdivs p, .shareddivs p, .aboutdivs ul {
     font-family: mdisplay;
+}
+.aboutdivs ul {
+    font-size: 0.75em;
+    list-style: circle;
+    margin-left: 50px;
 }
 .homedivs p {
     font-family: mdisplay;
-    font-size: 0.65em;
+    /* font-size: 0.65em; */
 }
-.third {
-    width: 30%;
-    padding: 0 10px;
+#menudivs {
+    height: 64%;
+}
+#menudivs .third {
+    width: 80%;
+    padding: 0 20px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -155,9 +162,8 @@ td {
     font-size: 1.8em;
 }
 
-
-#menudivs td:first-child {
-    width: 10%;
+#menudivs td {
+    width: 300px;
 }
 #menu_options {
     position: relative;
@@ -192,7 +198,7 @@ td {
     display: block;
     text-align: center;
     cursor: pointer;
-    padding: 3% 0;
+    padding: 15px 0 !important;
 }
 .center {
     text-align: center !important;
@@ -416,6 +422,7 @@ canvas { pointer-events:none; z-index:10; }
     }
     .shareddivs.img {
         height: 250px;
+        width: 100%;
     }
     #footer .homedivs {
         height: 280px;

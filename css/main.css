@@ -143,10 +143,14 @@ td {
 }
 .homedivs p {
     font-family: mdisplay;
+<<<<<<< HEAD
     /* font-size: 0.65em; */
 }
 #menudivs {
     height: 64%;
+=======
+    font-size: 0.65em;
+>>>>>>> d06296c1384d93cc3b7f7ded478b938f5d0dd64a
 }
 #menudivs .third {
     width: 80%;

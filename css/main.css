@@ -25,6 +25,13 @@ a {
    /*color: #ede20f;*/
    color: green;
 }
+i {
+    color: green;
+}
+#about_list .dash {
+    margin-right: 7px;
+    margin-left: 3px;
+}
 ul {
     list-style: none;
     padding: 0;

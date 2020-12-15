@@ -201,6 +201,7 @@
                         // div.innerHTML = block_content[i].title
                         a_link.innerHTML = block_content[i].title
                         a_link.src = link
+                        console.log(a_link)
                         div.appendChild(a_link);
                         div.appendChild(span);
                     }

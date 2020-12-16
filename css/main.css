@@ -380,7 +380,12 @@ canvas { pointer-events:none; z-index:10; }
     @media not all and (min-resolution:.001dpcm){ @supports (-webkit-appearance:none) {
     }}
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1200px) {
+    h1#title {
+        font-size:3.8em;
+    }
+}
+@media screen and (max-width: 950px) {
     #grid-container {
         height: auto;
         margin-top: 0.5em;

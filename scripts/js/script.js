@@ -180,15 +180,18 @@
                 while(a<(arena_len/2) && i<(arena_len/2)) {
                     if (block_content[i].type == "text" ) {
                         div.classList.add("format_text") 
-                        // div.innerHTML = block_content[i].title
+                        a_link.target = "_blank"
                         a_link.innerHTML = block_content[i].title
-                        a_link.src = link
+                        a_link.href = block_content[i].link
                         div.appendChild(a_link);
                         div.appendChild(span);
                     }
                     if (block_content[i].type == "img" ) {
                         div.classList.add("format_img")
-                        div.appendChild(block_content[i].content);
+                        a_link.target = "_blank"
+                        a_link.href = block_content[i].link
+                        a_link.appendChild(block_content[i].content);
+                        div.appendChild(a_link);
                         div.appendChild(span);
                     }
                     col[0].appendChild(div);
@@ -198,16 +201,18 @@
                 while(a<=(arena_len/2) && i>=(arena_len/2)) {
                     if (block_content[i].type == "text" ) {
                         div.classList.add("format_text") 
-                        // div.innerHTML = block_content[i].title
+                        a_link.target = "_blank"
                         a_link.innerHTML = block_content[i].title
-                        a_link.src = link
-                        console.log(a_link)
+                        a_link.href = block_content[i].link
                         div.appendChild(a_link);
                         div.appendChild(span);
                     }
                     if (block_content[i].type == "img" ) {
                         div.classList.add("format_img")
-                        div.appendChild(block_content[i].content);
+                        a_link.target = "_blank"
+                        a_link.href = block_content[i].link
+                        a_link.appendChild(block_content[i].content);
+                        div.appendChild(a_link);
                         div.appendChild(span);
                     }
                     col[1].appendChild(div);
